@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="./css/output.css">  
   <title>Frontend Mentor | IP Address Tracker</title>
+  <script src="script.js" defer></script>
 </head>
 <body class=" font-Rubik">
   <div data-map class=" absolute inset-0 -z-10">
@@ -14,11 +15,9 @@
       IP Address Tracker
     </h1>
     <div class=" flex justify-between items-stretch rounded-lg bg-white overflow-hidden w-full max-w-xl h-14">
-      <div class=" w-full p-3">
-        <input class=" focus:outline-none ring-0 w-full text-lg pl-2 text-gray-700 placeholder:text-xs"
+        <input data-input class=" pl-4 focus:outline-none ring-0 w-full text-lg text-gray-700 placeholder:text-xs"
           type="search" placeholder="Search for any IP address or domain">
-      </div>
-      <div class=" bg-black hover:bg-gray-800 hover:cursor-pointer h-14 w-16 grid place-items-center">
+      <div data-submit class=" bg-black hover:bg-gray-800 hover:cursor-pointer h-14 w-16 grid place-items-center">
         <img src="./images/icon-arrow.svg" alt="arrow"/>
       </div>
     </div>
@@ -27,25 +26,25 @@
         <p class=" text-xs md:text-s font-bold uppercase text-gray-400 mb-1">
           IP Address
         </p>
-        <p class=" font-bold md:text-xl text-lg" data-in="ip"">1902.1902.1902.</p>
+        <p class=" md:text-xl font-[500] text-lg" data-in="ip"">1902.1902.1902.</p>
       </div>
       <div class=" flex-1 md:border-l pl-4 md:border-solid md:border-gray-400 ">
         <p class=" text-xs md:text-s font-bold uppercase text-gray-400 mb-1">
           Location
         </p>
-        <p class=" font-bold md:text-xl text-lg" data-in="ip""></p>
+        <p class=" md:text-xl font-[500] text-lg" data-in="location""></p>
       </div>
       <div class=" flex-1 md:border-l pl-4 md:border-solid md:border-gray-400 ">
         <p class=" text-xs md:text-s font-bold uppercase text-gray-400 mb-1">
           Timezone
         </p>
-        <p class=" font-bold md:text-xl text-lg" data-in="ip""></p>
+        <p class=" md:text-xl font-[500] text-lg" data-in="timezone""></p>
       </div>
       <div class=" flex-1 md:border-l pl-4 md:border-solid md:border-gray-400 ">
         <p class=" text-xs md:text-s font-bold uppercase text-gray-400 mb-1">
           ISP
         </p>
-        <p class=" font-bold  md:text-xl text-lg" data-in="ip""></p>
+        <p class="  md:text-xl font-[500] text-lg" data-in="isp""></p>
       </div>
     </div>
   </main>
