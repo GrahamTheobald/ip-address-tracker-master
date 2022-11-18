@@ -1,7 +1,5 @@
-const mapDiv = document.querySelector("[data-map]")
 const dataDivs = document.querySelectorAll("[data-in]")
 const input = document.querySelector("[data-input]")
-const submit = document.querySelector("[data-submit]")
 const form = document.querySelector("[data-form]")
 
 const API_KEY = 'e08a37d7f9d54287b031e8df856a534a'
@@ -22,7 +20,6 @@ form.addEventListener("submit", e => {
 
 async function render() {
   const searchTerm = input.value
-  console.log(input)
   const data = await apiCall(searchTerm)
   if (!data) return
   populate(data)
